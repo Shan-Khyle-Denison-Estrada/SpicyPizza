@@ -20,6 +20,12 @@
                 </a>
             </li>
             <li class="nav-item">
+                <a class="nav-link <?= $promotion_page ?>" href="promotion.php">
+                    <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                    Promotions
+                </a>
+            </li>
+            <li class="nav-item">
                 <a class="nav-link <?= $customers_page ?>" href="#">
                     <i class="fa fa-users" aria-hidden="true"></i>
                     Customers

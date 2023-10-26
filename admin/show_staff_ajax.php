@@ -15,7 +15,7 @@ if ($_SERVER["REQUEST_METHOD"] == "GET") {
 ?>
             <tr>
                 <td><?= $counter ?></td>
-                <td><?= $item['firstname'] . ' ' . $item['lastname'] ?></td>
+                <td><?= $item['firstname']?></td>
                 <td><?= $item['role'] ?></td>
                 <td><?= $item['email'] ?></td>
                 <td><?= $item['status'] ?></td>
