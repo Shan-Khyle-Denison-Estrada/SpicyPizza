@@ -1,5 +1,6 @@
 <?php
 require_once '../classes/promotion.class.php';
+require_once '../tools/functions.php';
 
 if ($_SERVER["REQUEST_METHOD"] == "GET") {
     $promotion = new Promotion();

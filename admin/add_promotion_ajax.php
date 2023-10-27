@@ -1,6 +1,7 @@
 <?php
 
     require_once '../classes/promotion.class.php';
+    require_once '../tools/functions.php';
 
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
         // Collect data from the AJAX request
@@ -13,7 +14,6 @@
 
         $promotion = new Promotion();
         $promotion->voucherName = $voucherName;
-        $promotion->lastname = $lastname;
         $promotion->discountType = $discountType;
         $promotion->amount = $amount;
         $promotion->minimumSpend = $minimumSpend;

@@ -95,7 +95,7 @@ $(document).ready(function(){
                     $("#password").val('')
                     $("input[name='status']:checked").val('')
                 } else {
-                    alert("Failed to add this staff.");
+                    alert("Failed to add staff.");
                 }
             }
         });

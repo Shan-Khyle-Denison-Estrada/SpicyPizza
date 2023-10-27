@@ -2,7 +2,7 @@
 
 require_once 'database.php';
 
-Class Staff{
+Class Promotion{
     //attributes
 
     public $id;
@@ -12,8 +12,6 @@ Class Staff{
     public $minimumSpend;
     public $slot;
     public $duration;
-    public $createdAt;
-    public $updatedAt;
 
     protected $db;
 
@@ -44,27 +42,25 @@ Class Staff{
         }	
     }
 
-    // function edit(){
-    //     $sql = "UPDATE staff SET firstname=:firstname, lastname=:lastname, role=:role, email=:email, password=:password, status=:status WHERE id = :id;";
+    function edit(){
+        $sql = "UPDATE promotion SET voucherName=:voucherName, discountType=:discountType, amount=:amount, minimumSpend=:minimumSpend, slot=:slot, duration=:duration WHERE id = :id;";
 
-    //     $query=$this->db->connect()->prepare($sql);
-    //     $query->bindParam(':firstname', $this->firstname);
-    //     $query->bindParam(':lastname', $this->lastname);
-    //     $query->bindParam(':role', $this->role);
-    //     $query->bindParam(':email', $this->email);
-    //     // Hash the password securely using password_hash
-    //     $hashedPassword = password_hash($this->password, PASSWORD_DEFAULT);
-    //     $query->bindParam(':password', $hashedPassword);
-    //     $query->bindParam(':status', $this->status);
-    //     $query->bindParam(':id', $this->id);
+        $query=$this->db->connect()->prepare($sql);
+        $query->bindParam(':voucherName', $this->voucherName);
+        $query->bindParam(':discountType', $this->discountType);
+        $query->bindParam(':amount', $this->amount);
+        $query->bindParam(':minimumSpend', $this->minimumSpend);
+        $query->bindParam(':slot', $this->slot);
+        $query->bindParam(':duration', $this->duration);
+        $query->bindParam(':id', $this->id);
         
-    //     if($query->execute()){
-    //         return true;
-    //     }
-    //     else{
-    //         return false;
-    //     }	
-    // }
+        if($query->execute()){
+            return true;
+        }
+        else{
+            return false;
+        }	
+    }
 
     function fetch($record_id){
         $sql = "SELECT * FROM promotion WHERE id = :id;";
