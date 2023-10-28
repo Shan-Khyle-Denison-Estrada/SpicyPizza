@@ -70,7 +70,6 @@ $(document).ready(function(){
             slots: $("#slots").val(),
             duration: $("#duration").val()
         };
-
         // Send AJAX request
         $.ajax({
             type: "POST",

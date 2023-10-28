@@ -109,6 +109,6 @@
     <?php
         require_once('../include/js.php')
     ?>
-    <script src="../js/staff.js"></script>
+    <script src="../js/promotion.js"></script>
 </body>
 </html>

@@ -31,7 +31,7 @@ Class Promotion{
         $query->bindParam(':discountType', $this->discountType);
         $query->bindParam(':amount', $this->amount);
         $query->bindParam(':minimumSpend', $this->minimumSpend);
-        $query->bindParam(':slot', $this->slot);
+        $query->bindParam(':slot', $this->slots);
         $query->bindParam(':duration', $this->duration);
         
         if($query->execute()){
