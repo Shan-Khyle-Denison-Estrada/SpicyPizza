@@ -34,7 +34,7 @@
             <li class="nav-item">
                 <a class="nav-link <?= $reports_page ?>" href="#">
                     <i class="fa fa-bar-chart" aria-hidden="true"></i>
-                    Reports sadas
+                    Reports
                 </a>
             </li>
             <li class="nav-item">
